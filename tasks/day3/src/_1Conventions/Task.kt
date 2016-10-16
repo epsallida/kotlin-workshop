@@ -1,0 +1,34 @@
+package _1Conventions
+
+import _1Conventions.TimeInterval.*
+
+// Uncomment the commented code and make it compile.
+// All the changes should be made in MyDate.kt file.
+// You may use functions declared in MyDateUtil.kt.
+
+fun task1(date1: MyDate, date2: MyDate): Boolean {
+    return date1 < date2
+}
+
+fun task2(date: MyDate, first: MyDate, last: MyDate): Boolean {
+    return date in DateRange(first, last)
+}
+
+fun task3(date: MyDate, first: MyDate, last: MyDate): Boolean {
+    return date in first..last
+}
+
+fun task4(firstDate: MyDate, secondDate: MyDate, handler: (MyDate) -> Unit) {
+    TODO()
+//    for (date in firstDate..secondDate) {
+//        handler(date)
+//    }
+}
+
+fun task5(today: MyDate): MyDate {
+    return today + YEAR + WEEK
+}
+
+fun task6(today: MyDate): MyDate {
+    return today + YEAR * 2 + WEEK * 3 + DAY * 5
+}
